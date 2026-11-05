@@ -1,0 +1,10 @@
+quantile,scope,sample_count,offset,fallback
+0.5,global_and_off_peak,2208,2.6510927967325912,False
+0.5,morning_peak,195,12.141162974986912,False
+0.5,evening_peak,260,20.059048560724477,False
+0.9,global_and_off_peak,2208,6.26237458611385,False
+0.9,morning_peak,195,10.286420631977848,False
+0.9,evening_peak,260,12.889517336480282,False
+0.95,global_and_off_peak,2208,7.448282879868202,False
+0.95,morning_peak,195,13.768301042978038,False
+0.95,evening_peak,260,14.415476099794489,False

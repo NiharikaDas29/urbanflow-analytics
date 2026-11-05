@@ -1,0 +1,65 @@
+{
+  "interpretation": "Estimated average concurrent use derived from rentals using Little's Law; not observed station inventory or failed demand.",
+  "assumptions": {
+    "registered_trip_min": 12,
+    "casual_trip_min": 30,
+    "fleet_buffer": 0.15,
+    "service_quantile": 0.95
+  },
+  "selected_point_model": "ExtraTreesRegressor",
+  "selection_rule": "Lowest MAE on April-May 2012 chronological validation; final test excluded.",
+  "ops_quantile_model": "HistGradientBoostingRegressor (native quantile)",
+  "ops_feature_set": "enhanced_ops",
+  "ops_calibration_method": "peak_aware",
+  "ops_minimum_peak_calibration_rows": 100,
+  "final_evaluation_report": "final_evaluation_report.md",
+  "frozen_model_config": "frozen_model_config.json",
+  "final_test_evaluation_run_count": 1,
+  "preserved_baseline_comparison_rows": 2730,
+  "periods": {
+    "fit_end_exclusive": "2012-06-01",
+    "calibration_start": "2012-06-01",
+    "calibration_end_exclusive": "2012-09-01",
+    "test_start": "2012-09-01T00:00:00",
+    "test_end": "2012-12-31T23:00:00",
+    "fit_rows": 11624,
+    "calibration_rows": 2208,
+    "test_rows": 2730
+  },
+  "test_metrics": {
+    "n": 2730,
+    "MAE": 12.587596077525646,
+    "RMSE": 19.60001130177292,
+    "WAPE": 0.20782263235090104,
+    "R2": 0.880120110289381,
+    "coverage_P50": 0.5644688644688645,
+    "pinball_P50": 6.293798038762823,
+    "coverage_P90": 0.8926739926739927,
+    "pinball_P90": 3.383834269879544,
+    "coverage_P95": 0.9351648351648352,
+    "pinball_P95": 2.1757390901722737
+  },
+  "peak_hour_test_metrics": {
+    "peak_hour_rows": 521,
+    "ops_p50_mae_peak_hours": 18.564486826692974,
+    "ops_p95_coverage_peak_hours": 0.9059500959692899
+  },
+  "validation_ops_permutation_importance": {
+    "lag_168": 11.408325261999394,
+    "lag_336": 11.29996255382986,
+    "lag_24": 3.320716837501658,
+    "weekend_daytime": 2.5068331690834613,
+    "hum_pct": 2.280915223676063,
+    "temp_c": 2.0358954948559624,
+    "commute_peak": 1.343226989244814,
+    "hr_sin": 1.222761241393112,
+    "weathersit": 1.0704428872051412,
+    "hr_cos": 1.021783865421843
+  },
+  "test_selection_guardrail": "No test rows were used for model selection, fitting, feature importance, or calibration. Test outputs are frozen; no post-test model changes were made.",
+  "limitations": [
+    "Trip durations and the fleet buffer are assumed, not measured in these CSVs.",
+    "Average concurrency is not station inventory and cannot reveal station stock-outs.",
+    "No purchase or redistribution verdict is supported without actual fleet and station data."
+  ]
+}

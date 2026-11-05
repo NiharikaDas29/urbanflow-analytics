@@ -1,0 +1,1771 @@
+{
+  "shape_hour": [
+    17379,
+    18
+  ],
+  "shape_day": [
+    731,
+    16
+  ],
+  "date_range_hour": {
+    "start": "2011-01-01T00:00:00",
+    "end": "2012-12-31T00:00:00"
+  },
+  "date_range_day": {
+    "start": "2011-01-01T00:00:00",
+    "end": "2012-12-31T00:00:00"
+  },
+  "null_cells_hour": 0,
+  "null_cells_day": 0,
+  "duplicate_rows_hour": 0,
+  "duplicate_rows_day": 0,
+  "duplicate_timestamps": 0,
+  "hour_table_profile": {
+    "dtypes": {
+      "instant": "int64",
+      "dteday": "datetime64[us]",
+      "season": "int64",
+      "yr": "int64",
+      "mnth": "int64",
+      "hr": "int64",
+      "holiday": "int64",
+      "weekday": "int64",
+      "workingday": "int64",
+      "weathersit": "int64",
+      "temp": "float64",
+      "atemp": "float64",
+      "hum": "float64",
+      "windspeed": "float64",
+      "casual": "int64",
+      "registered": "int64",
+      "cnt": "int64",
+      "ts": "datetime64[us]"
+    },
+    "missing_by_column": {
+      "instant": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "dteday": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "season": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "yr": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "mnth": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "hr": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "holiday": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "weekday": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "workingday": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "weathersit": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "temp": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "atemp": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "hum": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "windspeed": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "casual": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "registered": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "cnt": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "ts": {
+        "count": 0,
+        "percent": 0.0
+      }
+    },
+    "numeric_distributions": {
+      "instant": {
+        "count": 17379.0,
+        "mean": 8690.0,
+        "std": 5017.029499614288,
+        "min": 1.0,
+        "1%": 174.78,
+        "25%": 4345.5,
+        "50%": 8690.0,
+        "75%": 13034.5,
+        "99%": 17205.22,
+        "max": 17379.0
+      },
+      "season": {
+        "count": 17379.0,
+        "mean": 2.5016399102364923,
+        "std": 1.1069181394480763,
+        "min": 1.0,
+        "1%": 1.0,
+        "25%": 2.0,
+        "50%": 3.0,
+        "75%": 3.0,
+        "99%": 4.0,
+        "max": 4.0
+      },
+      "yr": {
+        "count": 17379.0,
+        "mean": 0.5025605615973301,
+        "std": 0.5000078290910197,
+        "min": 0.0,
+        "1%": 0.0,
+        "25%": 0.0,
+        "50%": 1.0,
+        "75%": 1.0,
+        "99%": 1.0,
+        "max": 1.0
+      },
+      "mnth": {
+        "count": 17379.0,
+        "mean": 6.537775476149376,
+        "std": 3.4387757137501653,
+        "min": 1.0,
+        "1%": 1.0,
+        "25%": 4.0,
+        "50%": 7.0,
+        "75%": 10.0,
+        "99%": 12.0,
+        "max": 12.0
+      },
+      "hr": {
+        "count": 17379.0,
+        "mean": 11.546751826917545,
+        "std": 6.9144050952644935,
+        "min": 0.0,
+        "1%": 0.0,
+        "25%": 6.0,
+        "50%": 12.0,
+        "75%": 18.0,
+        "99%": 23.0,
+        "max": 23.0
+      },
+      "holiday": {
+        "count": 17379.0,
+        "mean": 0.028770355026181024,
+        "std": 0.16716527638437123,
+        "min": 0.0,
+        "1%": 0.0,
+        "25%": 0.0,
+        "50%": 0.0,
+        "75%": 0.0,
+        "99%": 1.0,
+        "max": 1.0
+      },
+      "weekday": {
+        "count": 17379.0,
+        "mean": 3.003682605443351,
+        "std": 2.005771456110988,
+        "min": 0.0,
+        "1%": 0.0,
+        "25%": 1.0,
+        "50%": 3.0,
+        "75%": 5.0,
+        "99%": 6.0,
+        "max": 6.0
+      },
+      "workingday": {
+        "count": 17379.0,
+        "mean": 0.6827205247712756,
+        "std": 0.46543063352388286,
+        "min": 0.0,
+        "1%": 0.0,
+        "25%": 0.0,
+        "50%": 1.0,
+        "75%": 1.0,
+        "99%": 1.0,
+        "max": 1.0
+      },
+      "weathersit": {
+        "count": 17379.0,
+        "mean": 1.425283387997008,
+        "std": 0.6393568777542534,
+        "min": 1.0,
+        "1%": 1.0,
+        "25%": 1.0,
+        "50%": 1.0,
+        "75%": 2.0,
+        "99%": 3.0,
+        "max": 4.0
+      },
+      "temp": {
+        "count": 17379.0,
+        "mean": 0.4969871684216583,
+        "std": 0.1925561212497219,
+        "min": 0.02,
+        "1%": 0.12,
+        "25%": 0.34,
+        "50%": 0.5,
+        "75%": 0.66,
+        "99%": 0.8844000000000233,
+        "max": 1.0
+      },
+      "atemp": {
+        "count": 17379.0,
+        "mean": 0.4757751021347604,
+        "std": 0.17185021563535943,
+        "min": 0.0,
+        "1%": 0.1212,
+        "25%": 0.3333,
+        "50%": 0.4848,
+        "75%": 0.6212,
+        "99%": 0.8182,
+        "max": 1.0
+      },
+      "hum": {
+        "count": 17379.0,
+        "mean": 0.6272288394038783,
+        "std": 0.19292983406291508,
+        "min": 0.0,
+        "1%": 0.23,
+        "25%": 0.48,
+        "50%": 0.63,
+        "75%": 0.78,
+        "99%": 1.0,
+        "max": 1.0
+      },
+      "windspeed": {
+        "count": 17379.0,
+        "mean": 0.1900976063064618,
+        "std": 0.12234022857279049,
+        "min": 0.0,
+        "1%": 0.0,
+        "25%": 0.1045,
+        "50%": 0.194,
+        "75%": 0.2537,
+        "99%": 0.5224,
+        "max": 0.8507
+      },
+      "casual": {
+        "count": 17379.0,
+        "mean": 35.67621842453536,
+        "std": 49.30503038705308,
+        "min": 0.0,
+        "1%": 0.0,
+        "25%": 4.0,
+        "50%": 17.0,
+        "75%": 48.0,
+        "99%": 240.0,
+        "max": 367.0
+      },
+      "registered": {
+        "count": 17379.0,
+        "mean": 153.78686920996606,
+        "std": 151.35728591258314,
+        "min": 0.0,
+        "1%": 1.0,
+        "25%": 34.0,
+        "50%": 115.0,
+        "75%": 220.0,
+        "99%": 699.2200000000012,
+        "max": 886.0
+      },
+      "cnt": {
+        "count": 17379.0,
+        "mean": 189.46308763450142,
+        "std": 181.38759909186473,
+        "min": 1.0,
+        "1%": 2.0,
+        "25%": 40.0,
+        "50%": 142.0,
+        "75%": 281.0,
+        "99%": 782.2200000000012,
+        "max": 977.0
+      }
+    }
+  },
+  "day_table_profile": {
+    "dtypes": {
+      "instant": "int64",
+      "dteday": "datetime64[us]",
+      "season": "int64",
+      "yr": "int64",
+      "mnth": "int64",
+      "holiday": "int64",
+      "weekday": "int64",
+      "workingday": "int64",
+      "weathersit": "int64",
+      "temp": "float64",
+      "atemp": "float64",
+      "hum": "float64",
+      "windspeed": "float64",
+      "casual": "int64",
+      "registered": "int64",
+      "cnt": "int64"
+    },
+    "missing_by_column": {
+      "instant": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "dteday": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "season": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "yr": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "mnth": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "holiday": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "weekday": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "workingday": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "weathersit": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "temp": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "atemp": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "hum": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "windspeed": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "casual": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "registered": {
+        "count": 0,
+        "percent": 0.0
+      },
+      "cnt": {
+        "count": 0,
+        "percent": 0.0
+      }
+    },
+    "numeric_distributions": {
+      "instant": {
+        "count": 731.0,
+        "mean": 366.0,
+        "std": 211.16581162678773,
+        "min": 1.0,
+        "1%": 8.3,
+        "25%": 183.5,
+        "50%": 366.0,
+        "75%": 548.5,
+        "99%": 723.7,
+        "max": 731.0
+      },
+      "season": {
+        "count": 731.0,
+        "mean": 2.496580027359781,
+        "std": 1.1108070927726255,
+        "min": 1.0,
+        "1%": 1.0,
+        "25%": 2.0,
+        "50%": 3.0,
+        "75%": 3.0,
+        "99%": 4.0,
+        "max": 4.0
+      },
+      "yr": {
+        "count": 731.0,
+        "mean": 0.5006839945280438,
+        "std": 0.5003418803818264,
+        "min": 0.0,
+        "1%": 0.0,
+        "25%": 0.0,
+        "50%": 1.0,
+        "75%": 1.0,
+        "99%": 1.0,
+        "max": 1.0
+      },
+      "mnth": {
+        "count": 731.0,
+        "mean": 6.519835841313269,
+        "std": 3.4519127872562527,
+        "min": 1.0,
+        "1%": 1.0,
+        "25%": 4.0,
+        "50%": 7.0,
+        "75%": 10.0,
+        "99%": 12.0,
+        "max": 12.0
+      },
+      "holiday": {
+        "count": 731.0,
+        "mean": 0.028727770177838577,
+        "std": 0.16715474262247382,
+        "min": 0.0,
+        "1%": 0.0,
+        "25%": 0.0,
+        "50%": 0.0,
+        "75%": 0.0,
+        "99%": 1.0,
+        "max": 1.0
+      },
+      "weekday": {
+        "count": 731.0,
+        "mean": 2.997264021887825,
+        "std": 2.0047869179444824,
+        "min": 0.0,
+        "1%": 0.0,
+        "25%": 1.0,
+        "50%": 3.0,
+        "75%": 5.0,
+        "99%": 6.0,
+        "max": 6.0
+      },
+      "workingday": {
+        "count": 731.0,
+        "mean": 0.6839945280437757,
+        "std": 0.4652333866777036,
+        "min": 0.0,
+        "1%": 0.0,
+        "25%": 0.0,
+        "50%": 1.0,
+        "75%": 1.0,
+        "99%": 1.0,
+        "max": 1.0
+      },
+      "weathersit": {
+        "count": 731.0,
+        "mean": 1.3953488372093024,
+        "std": 0.5448943419593665,
+        "min": 1.0,
+        "1%": 1.0,
+        "25%": 1.0,
+        "50%": 1.0,
+        "75%": 2.0,
+        "99%": 3.0,
+        "max": 3.0
+      },
+      "temp": {
+        "count": 731.0,
+        "mean": 0.495384788508892,
+        "std": 0.18305099611148878,
+        "min": 0.0591304,
+        "1%": 0.1460436,
+        "25%": 0.3370835,
+        "50%": 0.498333,
+        "75%": 0.6554165000000001,
+        "99%": 0.8260000000000003,
+        "max": 0.861667
+      },
+      "atemp": {
+        "count": 731.0,
+        "mean": 0.47435398864569084,
+        "std": 0.1629611783863113,
+        "min": 0.0790696,
+        "1%": 0.14586249999999998,
+        "25%": 0.3378425,
+        "50%": 0.486733,
+        "75%": 0.6086020000000001,
+        "99%": 0.7785870000000011,
+        "max": 0.840896
+      },
+      "hum": {
+        "count": 731.0,
+        "mean": 0.6278940629274967,
+        "std": 0.14242909513835394,
+        "min": 0.0,
+        "1%": 0.3121251,
+        "25%": 0.52,
+        "50%": 0.626667,
+        "75%": 0.7302085,
+        "99%": 0.9279169000000002,
+        "max": 0.9725
+      },
+      "windspeed": {
+        "count": 731.0,
+        "mean": 0.190486211627907,
+        "std": 0.07749787068166941,
+        "min": 0.0223917,
+        "1%": 0.05297346,
+        "25%": 0.13495,
+        "50%": 0.180975,
+        "75%": 0.2332145,
+        "99%": 0.4086522000000001,
+        "max": 0.507463
+      },
+      "casual": {
+        "count": 731.0,
+        "mean": 848.1764705882352,
+        "std": 686.622488284655,
+        "min": 2.0,
+        "1%": 38.9,
+        "25%": 315.5,
+        "50%": 713.0,
+        "75%": 1096.0,
+        "99%": 2930.600000000005,
+        "max": 3410.0
+      },
+      "registered": {
+        "count": 731.0,
+        "mean": 3656.172366621067,
+        "std": 1560.2563770194536,
+        "min": 20.0,
+        "1%": 574.2,
+        "25%": 2497.0,
+        "50%": 3662.0,
+        "75%": 4776.5,
+        "99%": 6787.3,
+        "max": 6946.0
+      },
+      "cnt": {
+        "count": 731.0,
+        "mean": 4504.3488372093025,
+        "std": 1937.2114516187676,
+        "min": 22.0,
+        "1%": 689.6,
+        "25%": 3152.0,
+        "50%": 4548.0,
+        "75%": 5956.0,
+        "99%": 8163.700000000001,
+        "max": 8714.0
+      }
+    }
+  },
+  "season_code_definitions": {
+    "1": "Spring (UCI source category)",
+    "2": "Summer (UCI source category)",
+    "3": "Fall (UCI source category)",
+    "4": "Winter (UCI source category)"
+  },
+  "weather_code_definitions": {
+    "1": "Clear, few clouds, partly cloudy",
+    "2": "Mist and/or cloudy conditions",
+    "3": "Light snow or light rain with scattered clouds",
+    "4": "Heavy rain/ice pellets/thunderstorm/mist or snow/fog"
+  },
+  "range_violations": {
+    "hr": 0,
+    "weekday": 0,
+    "season": 0,
+    "mnth": 0,
+    "weathersit": 0,
+    "holiday": 0,
+    "workingday": 0,
+    "yr": 0,
+    "temp": 0,
+    "atemp": 0,
+    "hum": 0,
+    "windspeed": 0,
+    "casual": 0,
+    "registered": 0,
+    "cnt": 0
+  },
+  "normalized_weather_columns_within_0_1": true,
+  "count_sum_mismatches": 0,
+  "non_integer_or_negative_count_violations": {
+    "casual": 0,
+    "registered": 0,
+    "cnt": 0
+  },
+  "weekday_calendar_mismatches": 0,
+  "month_calendar_mismatches": 0,
+  "year_calendar_mismatches": 0,
+  "workingday_weekend_or_holiday": 0,
+  "season_code_counts_by_month": {
+    "1": {
+      "1": 1429,
+      "2": 0,
+      "3": 0,
+      "4": 0
+    },
+    "2": {
+      "1": 1341,
+      "2": 0,
+      "3": 0,
+      "4": 0
+    },
+    "3": {
+      "1": 949,
+      "2": 524,
+      "3": 0,
+      "4": 0
+    },
+    "4": {
+      "1": 0,
+      "2": 1437,
+      "3": 0,
+      "4": 0
+    },
+    "5": {
+      "1": 0,
+      "2": 1488,
+      "3": 0,
+      "4": 0
+    },
+    "6": {
+      "1": 0,
+      "2": 960,
+      "3": 480,
+      "4": 0
+    },
+    "7": {
+      "1": 0,
+      "2": 0,
+      "3": 1488,
+      "4": 0
+    },
+    "8": {
+      "1": 0,
+      "2": 0,
+      "3": 1475,
+      "4": 0
+    },
+    "9": {
+      "1": 0,
+      "2": 0,
+      "3": 1053,
+      "4": 384
+    },
+    "10": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1451
+    },
+    "11": {
+      "1": 0,
+      "2": 0,
+      "3": 0,
+      "4": 1437
+    },
+    "12": {
+      "1": 523,
+      "2": 0,
+      "3": 0,
+      "4": 960
+    }
+  },
+  "weather_code_counts": {
+    "1": 11413,
+    "2": 4544,
+    "3": 1419,
+    "4": 3
+  },
+  "observed_zero_rental_rows": 0,
+  "windspeed_reported_zero_rows": 2180,
+  "humidity_zero_rows": 22,
+  "expected_hourly_rows_between_observed_endpoints": 17544,
+  "missing_timestamp_count": 165,
+  "missing_timestamp_intervals": [
+    {
+      "start": "2011-01-02T05:00:00",
+      "end": "2011-01-02T05:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-01-03T02:00:00",
+      "end": "2011-01-03T02:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-01-03T03:00:00",
+      "end": "2011-01-03T03:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-01-04T03:00:00",
+      "end": "2011-01-04T03:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-01-05T03:00:00",
+      "end": "2011-01-05T03:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-01-06T03:00:00",
+      "end": "2011-01-06T03:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-01-07T03:00:00",
+      "end": "2011-01-07T03:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-01-11T03:00:00",
+      "end": "2011-01-11T03:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-01-11T04:00:00",
+      "end": "2011-01-11T04:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-01-12T03:00:00",
+      "end": "2011-01-12T03:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-01-12T04:00:00",
+      "end": "2011-01-12T04:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-01-14T04:00:00",
+      "end": "2011-01-14T04:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-01-18T00:00:00",
+      "end": "2011-01-18T00:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-01-18T01:00:00",
+      "end": "2011-01-18T01:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-01-18T02:00:00",
+      "end": "2011-01-18T02:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-01-18T03:00:00",
+      "end": "2011-01-18T03:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-01-18T04:00:00",
+      "end": "2011-01-18T04:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-01-18T05:00:00",
+      "end": "2011-01-18T05:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-01-18T06:00:00",
+      "end": "2011-01-18T06:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-01-18T07:00:00",
+      "end": "2011-01-18T07:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-01-18T08:00:00",
+      "end": "2011-01-18T08:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-01-18T09:00:00",
+      "end": "2011-01-18T09:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-01-18T10:00:00",
+      "end": "2011-01-18T10:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-01-18T11:00:00",
+      "end": "2011-01-18T11:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-01-19T03:00:00",
+      "end": "2011-01-19T03:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-01-22T05:00:00",
+      "end": "2011-01-22T05:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-01-23T04:00:00",
+      "end": "2011-01-23T04:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-01-24T02:00:00",
+      "end": "2011-01-24T02:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-01-25T03:00:00",
+      "end": "2011-01-25T03:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-01-26T03:00:00",
+      "end": "2011-01-26T03:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-01-26T04:00:00",
+      "end": "2011-01-26T04:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-01-26T18:00:00",
+      "end": "2011-01-26T18:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-01-26T19:00:00",
+      "end": "2011-01-26T19:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-01-26T20:00:00",
+      "end": "2011-01-26T20:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-01-26T21:00:00",
+      "end": "2011-01-26T21:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-01-26T22:00:00",
+      "end": "2011-01-26T22:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-01-26T23:00:00",
+      "end": "2011-01-26T23:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-01-27T00:00:00",
+      "end": "2011-01-27T00:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-01-27T01:00:00",
+      "end": "2011-01-27T01:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-01-27T02:00:00",
+      "end": "2011-01-27T02:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-01-27T03:00:00",
+      "end": "2011-01-27T03:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-01-27T04:00:00",
+      "end": "2011-01-27T04:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-01-27T05:00:00",
+      "end": "2011-01-27T05:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-01-27T06:00:00",
+      "end": "2011-01-27T06:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-01-27T07:00:00",
+      "end": "2011-01-27T07:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-01-27T08:00:00",
+      "end": "2011-01-27T08:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-01-27T09:00:00",
+      "end": "2011-01-27T09:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-01-27T10:00:00",
+      "end": "2011-01-27T10:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-01-27T11:00:00",
+      "end": "2011-01-27T11:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-01-27T12:00:00",
+      "end": "2011-01-27T12:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-01-27T13:00:00",
+      "end": "2011-01-27T13:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-01-27T14:00:00",
+      "end": "2011-01-27T14:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-01-27T15:00:00",
+      "end": "2011-01-27T15:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-01-28T04:00:00",
+      "end": "2011-01-28T04:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-01-29T05:00:00",
+      "end": "2011-01-29T05:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-01-30T06:00:00",
+      "end": "2011-01-30T06:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-02-01T04:00:00",
+      "end": "2011-02-01T04:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-02-03T04:00:00",
+      "end": "2011-02-03T04:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-02-04T04:00:00",
+      "end": "2011-02-04T04:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-02-09T04:00:00",
+      "end": "2011-02-09T04:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-02-10T03:00:00",
+      "end": "2011-02-10T03:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-02-11T03:00:00",
+      "end": "2011-02-11T03:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-02-11T04:00:00",
+      "end": "2011-02-11T04:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-02-13T05:00:00",
+      "end": "2011-02-13T05:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-02-15T03:00:00",
+      "end": "2011-02-15T03:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-02-16T02:00:00",
+      "end": "2011-02-16T02:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-02-20T05:00:00",
+      "end": "2011-02-20T05:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-02-22T00:00:00",
+      "end": "2011-02-22T00:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-02-22T01:00:00",
+      "end": "2011-02-22T01:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-02-22T02:00:00",
+      "end": "2011-02-22T02:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-02-22T03:00:00",
+      "end": "2011-02-22T03:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-02-22T04:00:00",
+      "end": "2011-02-22T04:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-02-22T05:00:00",
+      "end": "2011-02-22T05:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-02-23T04:00:00",
+      "end": "2011-02-23T04:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-02-24T04:00:00",
+      "end": "2011-02-24T04:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-02-25T04:00:00",
+      "end": "2011-02-25T04:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-02-27T05:00:00",
+      "end": "2011-02-27T05:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-02-28T02:00:00",
+      "end": "2011-02-28T02:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-02-28T04:00:00",
+      "end": "2011-02-28T04:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-03-06T05:00:00",
+      "end": "2011-03-06T05:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-03-07T02:00:00",
+      "end": "2011-03-07T02:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-03-10T03:00:00",
+      "end": "2011-03-10T03:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-03-10T04:00:00",
+      "end": "2011-03-10T04:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-03-11T04:00:00",
+      "end": "2011-03-11T04:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-03-13T02:00:00",
+      "end": "2011-03-13T02:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-03-14T04:00:00",
+      "end": "2011-03-14T04:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-03-15T03:00:00",
+      "end": "2011-03-15T03:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-03-16T02:00:00",
+      "end": "2011-03-16T02:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-03-18T04:00:00",
+      "end": "2011-03-18T04:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-03-21T04:00:00",
+      "end": "2011-03-21T04:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-03-23T04:00:00",
+      "end": "2011-03-23T04:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-03-27T05:00:00",
+      "end": "2011-03-27T05:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-03-28T04:00:00",
+      "end": "2011-03-28T04:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-04-11T03:00:00",
+      "end": "2011-04-11T03:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-08-27T18:00:00",
+      "end": "2011-08-27T18:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-08-27T19:00:00",
+      "end": "2011-08-27T19:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-08-27T20:00:00",
+      "end": "2011-08-27T20:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-08-27T21:00:00",
+      "end": "2011-08-27T21:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-08-27T22:00:00",
+      "end": "2011-08-27T22:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-08-27T23:00:00",
+      "end": "2011-08-27T23:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-08-28T00:00:00",
+      "end": "2011-08-28T00:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-08-28T01:00:00",
+      "end": "2011-08-28T01:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-08-28T02:00:00",
+      "end": "2011-08-28T02:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-08-28T03:00:00",
+      "end": "2011-08-28T03:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-08-28T04:00:00",
+      "end": "2011-08-28T04:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-08-28T05:00:00",
+      "end": "2011-08-28T05:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-08-28T06:00:00",
+      "end": "2011-08-28T06:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-09-06T01:00:00",
+      "end": "2011-09-06T01:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-09-08T02:00:00",
+      "end": "2011-09-08T02:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-09-12T03:00:00",
+      "end": "2011-09-12T03:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-10-19T03:00:00",
+      "end": "2011-10-19T03:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-11-28T02:00:00",
+      "end": "2011-11-28T02:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-12-25T04:00:00",
+      "end": "2011-12-25T04:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-12-26T03:00:00",
+      "end": "2011-12-26T03:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2011-12-28T04:00:00",
+      "end": "2011-12-28T04:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2012-01-02T03:00:00",
+      "end": "2012-01-02T03:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2012-01-10T03:00:00",
+      "end": "2012-01-10T03:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2012-01-17T03:00:00",
+      "end": "2012-01-17T03:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2012-02-06T03:00:00",
+      "end": "2012-02-06T03:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2012-02-20T04:00:00",
+      "end": "2012-02-20T04:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2012-02-21T03:00:00",
+      "end": "2012-02-21T03:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2012-02-29T04:00:00",
+      "end": "2012-02-29T04:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2012-03-11T02:00:00",
+      "end": "2012-03-11T02:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2012-04-02T03:00:00",
+      "end": "2012-04-02T03:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2012-04-11T04:00:00",
+      "end": "2012-04-11T04:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2012-10-29T01:00:00",
+      "end": "2012-10-29T01:00:00",
+      "hours": 1,
+      "classification": "known_event_date_candidate"
+    },
+    {
+      "start": "2012-10-29T02:00:00",
+      "end": "2012-10-29T02:00:00",
+      "hours": 1,
+      "classification": "known_event_date_candidate"
+    },
+    {
+      "start": "2012-10-29T03:00:00",
+      "end": "2012-10-29T03:00:00",
+      "hours": 1,
+      "classification": "known_event_date_candidate"
+    },
+    {
+      "start": "2012-10-29T04:00:00",
+      "end": "2012-10-29T04:00:00",
+      "hours": 1,
+      "classification": "known_event_date_candidate"
+    },
+    {
+      "start": "2012-10-29T05:00:00",
+      "end": "2012-10-29T05:00:00",
+      "hours": 1,
+      "classification": "known_event_date_candidate"
+    },
+    {
+      "start": "2012-10-29T06:00:00",
+      "end": "2012-10-29T06:00:00",
+      "hours": 1,
+      "classification": "known_event_date_candidate"
+    },
+    {
+      "start": "2012-10-29T07:00:00",
+      "end": "2012-10-29T07:00:00",
+      "hours": 1,
+      "classification": "known_event_date_candidate"
+    },
+    {
+      "start": "2012-10-29T08:00:00",
+      "end": "2012-10-29T08:00:00",
+      "hours": 1,
+      "classification": "known_event_date_candidate"
+    },
+    {
+      "start": "2012-10-29T09:00:00",
+      "end": "2012-10-29T09:00:00",
+      "hours": 1,
+      "classification": "known_event_date_candidate"
+    },
+    {
+      "start": "2012-10-29T10:00:00",
+      "end": "2012-10-29T10:00:00",
+      "hours": 1,
+      "classification": "known_event_date_candidate"
+    },
+    {
+      "start": "2012-10-29T11:00:00",
+      "end": "2012-10-29T11:00:00",
+      "hours": 1,
+      "classification": "known_event_date_candidate"
+    },
+    {
+      "start": "2012-10-29T12:00:00",
+      "end": "2012-10-29T12:00:00",
+      "hours": 1,
+      "classification": "known_event_date_candidate"
+    },
+    {
+      "start": "2012-10-29T13:00:00",
+      "end": "2012-10-29T13:00:00",
+      "hours": 1,
+      "classification": "known_event_date_candidate"
+    },
+    {
+      "start": "2012-10-29T14:00:00",
+      "end": "2012-10-29T14:00:00",
+      "hours": 1,
+      "classification": "known_event_date_candidate"
+    },
+    {
+      "start": "2012-10-29T15:00:00",
+      "end": "2012-10-29T15:00:00",
+      "hours": 1,
+      "classification": "known_event_date_candidate"
+    },
+    {
+      "start": "2012-10-29T16:00:00",
+      "end": "2012-10-29T16:00:00",
+      "hours": 1,
+      "classification": "known_event_date_candidate"
+    },
+    {
+      "start": "2012-10-29T17:00:00",
+      "end": "2012-10-29T17:00:00",
+      "hours": 1,
+      "classification": "known_event_date_candidate"
+    },
+    {
+      "start": "2012-10-29T18:00:00",
+      "end": "2012-10-29T18:00:00",
+      "hours": 1,
+      "classification": "known_event_date_candidate"
+    },
+    {
+      "start": "2012-10-29T19:00:00",
+      "end": "2012-10-29T19:00:00",
+      "hours": 1,
+      "classification": "known_event_date_candidate"
+    },
+    {
+      "start": "2012-10-29T20:00:00",
+      "end": "2012-10-29T20:00:00",
+      "hours": 1,
+      "classification": "known_event_date_candidate"
+    },
+    {
+      "start": "2012-10-29T21:00:00",
+      "end": "2012-10-29T21:00:00",
+      "hours": 1,
+      "classification": "known_event_date_candidate"
+    },
+    {
+      "start": "2012-10-29T22:00:00",
+      "end": "2012-10-29T22:00:00",
+      "hours": 1,
+      "classification": "known_event_date_candidate"
+    },
+    {
+      "start": "2012-10-29T23:00:00",
+      "end": "2012-10-29T23:00:00",
+      "hours": 1,
+      "classification": "known_event_date_candidate"
+    },
+    {
+      "start": "2012-10-30T00:00:00",
+      "end": "2012-10-30T00:00:00",
+      "hours": 1,
+      "classification": "known_event_date_candidate"
+    },
+    {
+      "start": "2012-10-30T01:00:00",
+      "end": "2012-10-30T01:00:00",
+      "hours": 1,
+      "classification": "known_event_date_candidate"
+    },
+    {
+      "start": "2012-10-30T02:00:00",
+      "end": "2012-10-30T02:00:00",
+      "hours": 1,
+      "classification": "known_event_date_candidate"
+    },
+    {
+      "start": "2012-10-30T03:00:00",
+      "end": "2012-10-30T03:00:00",
+      "hours": 1,
+      "classification": "known_event_date_candidate"
+    },
+    {
+      "start": "2012-10-30T04:00:00",
+      "end": "2012-10-30T04:00:00",
+      "hours": 1,
+      "classification": "known_event_date_candidate"
+    },
+    {
+      "start": "2012-10-30T05:00:00",
+      "end": "2012-10-30T05:00:00",
+      "hours": 1,
+      "classification": "known_event_date_candidate"
+    },
+    {
+      "start": "2012-10-30T06:00:00",
+      "end": "2012-10-30T06:00:00",
+      "hours": 1,
+      "classification": "known_event_date_candidate"
+    },
+    {
+      "start": "2012-10-30T07:00:00",
+      "end": "2012-10-30T07:00:00",
+      "hours": 1,
+      "classification": "known_event_date_candidate"
+    },
+    {
+      "start": "2012-10-30T08:00:00",
+      "end": "2012-10-30T08:00:00",
+      "hours": 1,
+      "classification": "known_event_date_candidate"
+    },
+    {
+      "start": "2012-10-30T09:00:00",
+      "end": "2012-10-30T09:00:00",
+      "hours": 1,
+      "classification": "known_event_date_candidate"
+    },
+    {
+      "start": "2012-10-30T10:00:00",
+      "end": "2012-10-30T10:00:00",
+      "hours": 1,
+      "classification": "known_event_date_candidate"
+    },
+    {
+      "start": "2012-10-30T11:00:00",
+      "end": "2012-10-30T11:00:00",
+      "hours": 1,
+      "classification": "known_event_date_candidate"
+    },
+    {
+      "start": "2012-10-30T12:00:00",
+      "end": "2012-10-30T12:00:00",
+      "hours": 1,
+      "classification": "known_event_date_candidate"
+    },
+    {
+      "start": "2012-11-08T03:00:00",
+      "end": "2012-11-08T03:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2012-11-29T03:00:00",
+      "end": "2012-11-29T03:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2012-12-24T04:00:00",
+      "end": "2012-12-24T04:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    },
+    {
+      "start": "2012-12-25T03:00:00",
+      "end": "2012-12-25T03:00:00",
+      "hours": 1,
+      "classification": "unknown_missing_observation"
+    }
+  ],
+  "potential_outage_gap_threshold_hours": 6,
+  "potential_outage_candidate_intervals": 36,
+  "missing_hours_by_hour_of_day": {
+    "0": 5,
+    "1": 7,
+    "2": 16,
+    "3": 34,
+    "4": 34,
+    "5": 14,
+    "6": 6,
+    "7": 4,
+    "8": 4,
+    "9": 4,
+    "10": 4,
+    "11": 4,
+    "12": 3,
+    "13": 2,
+    "14": 2,
+    "15": 2,
+    "16": 1,
+    "17": 1,
+    "18": 3,
+    "19": 3,
+    "20": 3,
+    "21": 3,
+    "22": 3,
+    "23": 3
+  },
+  "daily_total_mismatches_hour_vs_day": 0,
+  "timestamp_hour_mismatches": 0,
+  "high_outlier_rows_3_iqr_by_hour_and_day_type": 23,
+  "outliers_removed": 0,
+  "outlier_policy": "Flagged within hour/day-type cells for review; genuine demand peaks are retained.",
+  "missing_data_policy": "Observed cnt=0 is retained as zero. Missing timestamps remain unknown and are not imputed as zero. Gaps of 6 or more consecutive hours are marked as unconfirmed outage candidates. October 29-30, 2012 are marked as known-event-date candidates.",
+  "issues_and_decisions": [
+    "165 timestamps are absent; all remain unknown rather than being treated as zero rentals.",
+    "36 gaps are flagged as candidate outages based on the configured event dates or a run of at least 6 missing hours; none is declared a confirmed outage from hourly counts alone.",
+    "22 rows report zero humidity; retained and flagged for source validation.",
+    "Season values are reported as source codes by month; no relabeling is inferred."
+  ],
+  "eda": {
+    "observed_rentals_excluding_known_event_dates": 3291561,
+    "rentals_by_dataset_year": {
+      "2011": 1243103,
+      "2012": 2048458
+    },
+    "registered_share": 0.8116613971304193,
+    "rain_or_snow_vs_clear_mean_ratio": 0.5442768699893206,
+    "temperature_correlation_with_rentals": 0.4046282716723519,
+    "humidity_correlation_with_rentals": -0.32268882106258323,
+    "outage_dates_excluded": [
+      "2012-10-29",
+      "2012-10-30"
+    ],
+    "bike_use_estimate_assumptions": {
+      "registered_trip_minutes": 12,
+      "casual_trip_minutes": 30,
+      "fleet_buffer": 0.15
+    }
+  },
+  "dataset_identity": {
+    "name": "UCI Bike Sharing Dataset",
+    "source_url": "https://archive.ics.uci.edu/dataset/275/bike+sharing+dataset",
+    "hour_table_rows_columns": [
+      17379,
+      18
+    ],
+    "day_table_rows_columns": [
+      731,
+      16
+    ],
+    "source_unit": "Hourly and daily completed rental counts; not station-level inventory."
+  }
+}

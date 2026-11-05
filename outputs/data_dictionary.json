@@ -1,0 +1,151 @@
+{
+  "source": {
+    "name": "UCI Bike Sharing Dataset",
+    "url": "https://archive.ics.uci.edu/dataset/275/bike+sharing+dataset",
+    "tables": [
+      "hour.csv",
+      "day.csv"
+    ]
+  },
+  "season_code_definitions": {
+    "1": "Spring (UCI source category)",
+    "2": "Summer (UCI source category)",
+    "3": "Fall (UCI source category)",
+    "4": "Winter (UCI source category)"
+  },
+  "weather_code_definitions": {
+    "1": "Clear, few clouds, partly cloudy",
+    "2": "Mist and/or cloudy conditions",
+    "3": "Light snow or light rain with scattered clouds",
+    "4": "Heavy rain/ice pellets/thunderstorm/mist or snow/fog"
+  },
+  "source_variables": {
+    "instant": "Source row identifier; not a demand predictor.",
+    "dteday": "Calendar date associated with the hourly or daily record.",
+    "season": "UCI season category code: 1 spring, 2 summer, 3 fall, 4 winter.",
+    "yr": "Dataset year indicator: 0=2011, 1=2012.",
+    "mnth": "Calendar month, 1 through 12.",
+    "hr": "Hour of day, 0 through 23; hourly table only.",
+    "holiday": "Whether the date is a source-calendar holiday.",
+    "weekday": "Day of week, 0=Sunday through 6=Saturday.",
+    "workingday": "Whether the source marks the date as a working day.",
+    "weathersit": "UCI weather category code; see weather_code_definitions.",
+    "temp": "Normalized air temperature; approximately Celsius = temp \u00d7 41.",
+    "atemp": "Normalized feels-like temperature; approximately Celsius = atemp \u00d7 50.",
+    "hum": "Normalized relative humidity; approximately percent = hum \u00d7 100.",
+    "windspeed": "Normalized wind speed; approximately km/h = windspeed \u00d7 67.",
+    "casual": "Observed completed rentals by casual users.",
+    "registered": "Observed completed rentals by registered users.",
+    "cnt": "Observed total completed rentals; equals casual + registered in source data."
+  },
+  "engineered_variables": {
+    "was_missing": "1 when the hourly timestamp is absent from the source; demand remains unknown.",
+    "is_observed": "1 only for source-observed hourly rows; used to exclude unknown targets.",
+    "outage_day": "Configured October 29\u201330, 2012 event-date flag; not a measured outage label.",
+    "potential_outage": "Missing-hour candidate flag from event dates or a >=6-hour gap; unconfirmed.",
+    "context_imputed": "Marks calendar/weather context filled only to render the complete grid.",
+    "temp_c": "Approximate Celsius temperature for interpretable relationships and OPS modeling.",
+    "atemp_c": "Approximate Celsius feels-like temperature.",
+    "hum_pct": "Approximate relative humidity percentage.",
+    "wind_kmh": "Approximate wind speed in km/h.",
+    "wind_reported_zero": "Source windspeed equals zero; quality flag retained for review.",
+    "hr_sin": "Sine cyclic encoding of hour so adjacent clock hours remain close in feature space.",
+    "hr_cos": "Cosine cyclic encoding of hour so adjacent clock hours remain close in feature space.",
+    "rain_or_snow": "Indicator for source weather codes 3 or 4.",
+    "commute_peak": "Working-day indicator for the configured 07\u201309 and 16\u201319 hours.",
+    "weekend_daytime": "Non-working-day indicator for daytime hours 10\u201317.",
+    "mnth_sin": "Sine cyclic encoding of month to represent year-boundary continuity.",
+    "mnth_cos": "Cosine cyclic encoding of month to represent year-boundary continuity.",
+    "hr_month_sin_sin": "Interaction between hourly sine and monthly sine.",
+    "hr_month_sin_cos": "Interaction between hourly sine and monthly cosine.",
+    "hr_month_cos_sin": "Interaction between hourly cosine and monthly sine.",
+    "hr_month_cos_cos": "Interaction between hourly cosine and monthly cosine.",
+    "temp_weather_2": "Temperature interaction for weather category 2.",
+    "temp_weather_3": "Temperature interaction for weather category 3.",
+    "temp_weather_4": "Temperature interaction for weather category 4.",
+    "casual_share": "Descriptive target-derived rider mix; not included in PLAN or OPS predictor lists.",
+    "bikes_in_use": "Little's Law estimate from completed rentals and assumed 12/30-minute trip durations; not observed inventory.",
+    "lag_24": "Estimated use at t\u221224h; latest historical target available to day-ahead OPS.",
+    "lag_168": "Estimated use at the same hour one week earlier (t\u2212168h).",
+    "lag_336": "Estimated use at the same hour two weeks earlier (t\u2212336h).",
+    "roll24": "Mean target estimate over t\u221247h through t\u221224h (at least 18 observed values).",
+    "roll168": "Mean target estimate over t\u2212191h through t\u221224h (at least 120 observed values).",
+    "demand_trend_7d": "Difference between recent and preceding seven-day means, both ending before target time."
+  },
+  "feature_sets": {
+    "PLAN": {
+      "columns": [
+        "hr_sin",
+        "hr_cos",
+        "weekday",
+        "workingday",
+        "holiday",
+        "mnth",
+        "season",
+        "temp_c",
+        "hum_pct",
+        "wind_kmh",
+        "weathersit",
+        "rain_or_snow",
+        "commute_peak",
+        "weekend_daytime"
+      ],
+      "purpose": "Calendar/weather-only scenarios; no demand lags."
+    },
+    "OPS": {
+      "columns": [
+        "hr_sin",
+        "hr_cos",
+        "weekday",
+        "workingday",
+        "holiday",
+        "mnth",
+        "season",
+        "temp_c",
+        "hum_pct",
+        "wind_kmh",
+        "weathersit",
+        "rain_or_snow",
+        "commute_peak",
+        "weekend_daytime",
+        "lag_24",
+        "lag_168",
+        "lag_336",
+        "roll24",
+        "roll168",
+        "demand_trend_7d",
+        "mnth_sin",
+        "mnth_cos",
+        "hr_month_sin_sin",
+        "hr_month_sin_cos",
+        "hr_month_cos_sin",
+        "hr_month_cos_cos",
+        "temp_weather_2",
+        "temp_weather_3",
+        "temp_weather_4"
+      ],
+      "purpose": "Rolling day-ahead use estimates with history cut off at t\u221224h; all rolling windows use earlier observed targets only."
+    }
+  },
+  "target_and_assumptions": {
+    "observed_demand": "cnt, casual, and registered are completed rentals observed by the source.",
+    "estimated_use": "bikes_in_use is derived with Little's Law and assumed rider-specific trip durations.",
+    "trip_duration_minutes": {
+      "registered": 12,
+      "casual": 30
+    },
+    "fleet_buffer": 0.15,
+    "not_observed": [
+      "station inventory",
+      "failed rental attempts",
+      "actual fleet size",
+      "trip durations"
+    ]
+  },
+  "leakage_controls": [
+    "casual_share and bikes_in_use are target-derived and are not predictor features.",
+    "PLAN_FEATS contains no demand lags.",
+    "OPS historical targets are shifted so inputs end at t\u221224h.",
+    "Missing target observations and configured event-date targets are excluded from OPS history."
+  ]
+}

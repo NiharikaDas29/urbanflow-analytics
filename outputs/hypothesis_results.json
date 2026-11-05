@@ -1,0 +1,167 @@
+{
+  "question": "Is the typical daily working-day peak-minus-off-peak rental difference positive, based on a paired signed-rank location test?",
+  "H0": "The paired difference distribution has no positive location shift (signed-rank pseudomedian/location parameter <= 0), under approximate symmetry.",
+  "H1": "The paired difference distribution has a positive location shift (signed-rank pseudomedian/location parameter > 0), under approximate symmetry.",
+  "test": "One-sided paired Wilcoxon signed-rank test on complete working days; tests a location shift under the symmetry assumption, not the arithmetic mean.",
+  "effect_measure": "Median of paired daily differences and median daily peak/off-peak ratio; these are descriptive effect measures, distinct from the signed-rank statistic.",
+  "test_statistic": 122738.0,
+  "p_value": 4.735848321255701e-83,
+  "alpha": 0.05,
+  "statistically_significant_at_alpha": true,
+  "assumption_checks": {
+    "unit_of_pairing": "calendar day",
+    "required_observed_peak_hours": [
+      8,
+      17,
+      18
+    ],
+    "required_observed_offpeak_hours": [
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      21,
+      22,
+      23
+    ],
+    "complete_days_only": true,
+    "paired_observations": 495,
+    "signed_rank_symmetry_assumption": "Wilcoxon signed-rank location inference assumes the paired differences are approximately symmetric around a common location. Distribution skewness, Bowley skewness, and matched quantile distances are reported as diagnostics, not as a formal symmetry test.",
+    "paired_difference_symmetry_diagnostic": {
+      "n": 495,
+      "mean_difference": 334.08350168350165,
+      "median_difference": 338.6666666666667,
+      "sample_skewness": -0.0904932152773446,
+      "bowley_skewness": -0.039060366020213115,
+      "lower_upper_quantile_distances_from_median": {
+        "p05_vs_p95": {
+          "lower": 232.66666666666669,
+          "upper": 225.4777777777777
+        },
+        "p10_vs_p90": {
+          "lower": 205.53333333333336,
+          "upper": 192.3333333333332
+        },
+        "p25_vs_p75": {
+          "lower": 105.66666666666669,
+          "upper": 97.72222222222223
+        },
+        "p40_vs_p60": {
+          "lower": 33.666666666666686,
+          "upper": 27.333333333333258
+        }
+      },
+      "summary_flags_potential_asymmetry": false,
+      "interpretation": "These selected summaries do not strongly flag asymmetry; they do not prove the distribution is symmetric.",
+      "formal_symmetry_test_performed": false
+    },
+    "serial_dependence": "Daily observations may be serially dependent; confidence intervals use resampled week blocks, while the Wilcoxon p-value assumes independent pairs."
+  },
+  "peak_hours": [
+    8,
+    17,
+    18
+  ],
+  "offpeak_hours": [
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    21,
+    22,
+    23
+  ],
+  "median_peak_rentals_per_hour": 499.3333333333333,
+  "median_offpeak_rentals_per_hour": 162.77777777777777,
+  "median_paired_difference_rentals_per_hour": 338.6666666666667,
+  "median_peak_to_offpeak_ratio": 3.1519650655021834,
+  "median_difference_block_bootstrap_ci95": [
+    315.1111111111111,
+    360.6722222222222
+  ],
+  "median_ratio_block_bootstrap_ci95": [
+    3.121105748135147,
+    3.181943487250172
+  ],
+  "practical_significance_interpretation": "Use the estimated absolute difference and relative ratio with their intervals to judge operational relevance; statistical significance alone does not establish a shortage or justify fleet purchase.",
+  "median_ratio_by_year": {
+    "2011": 3.1255722694571615,
+    "2012": 3.1773096003091332
+  },
+  "median_ratio_by_month": {
+    "1": 3.396694214876033,
+    "2": 3.2142857142857144,
+    "3": 3.1938509640437727,
+    "4": 3.20165235314325,
+    "5": 3.0093959731543625,
+    "6": 3.1030485186775443,
+    "7": 3.1352288488210815,
+    "8": 3.0545909626623575,
+    "9": 3.1923973679159268,
+    "10": 3.2747917154013644,
+    "11": 3.148478647563196,
+    "12": 3.103646833013436
+  },
+  "share_of_days_peak_at_least_twice_offpeak": 0.9555555555555556,
+  "historical_evidence_limit": "Rental counts do not record failed rental attempts, station inventory, or fleet size. This is descriptive historical evidence, not a causal estimate of rebalancing effects.",
+  "sample_size_scenarios": [
+    {
+      "assumed_baseline_failed_rental_rate": 0.03,
+      "relative_reduction_to_detect": 0.2,
+      "independent_attempts_per_arm": 11452,
+      "assumed_cluster_size": 200,
+      "assumed_icc": 0.05,
+      "design_effect": 10.95,
+      "approx_attempts_per_arm_with_clustering": 125400
+    },
+    {
+      "assumed_baseline_failed_rental_rate": 0.03,
+      "relative_reduction_to_detect": 0.3,
+      "independent_attempts_per_arm": 4812,
+      "assumed_cluster_size": 200,
+      "assumed_icc": 0.05,
+      "design_effect": 10.95,
+      "approx_attempts_per_arm_with_clustering": 52692
+    },
+    {
+      "assumed_baseline_failed_rental_rate": 0.05,
+      "relative_reduction_to_detect": 0.2,
+      "independent_attempts_per_arm": 6743,
+      "assumed_cluster_size": 200,
+      "assumed_icc": 0.05,
+      "design_effect": 10.95,
+      "approx_attempts_per_arm_with_clustering": 73836
+    },
+    {
+      "assumed_baseline_failed_rental_rate": 0.05,
+      "relative_reduction_to_detect": 0.3,
+      "independent_attempts_per_arm": 2836,
+      "assumed_cluster_size": 200,
+      "assumed_icc": 0.05,
+      "design_effect": 10.95,
+      "approx_attempts_per_arm_with_clustering": 31055
+    },
+    {
+      "assumed_baseline_failed_rental_rate": 0.08,
+      "relative_reduction_to_detect": 0.2,
+      "independent_attempts_per_arm": 4094,
+      "assumed_cluster_size": 200,
+      "assumed_icc": 0.05,
+      "design_effect": 10.95,
+      "approx_attempts_per_arm_with_clustering": 44830
+    },
+    {
+      "assumed_baseline_failed_rental_rate": 0.08,
+      "relative_reduction_to_detect": 0.3,
+      "independent_attempts_per_arm": 1724,
+      "assumed_cluster_size": 200,
+      "assumed_icc": 0.05,
+      "design_effect": 10.95,
+      "approx_attempts_per_arm_with_clustering": 18878
+    }
+  ]
+}
